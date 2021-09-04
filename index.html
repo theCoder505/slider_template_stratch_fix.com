@@ -55,7 +55,8 @@
             /* padding-top: calc(100% / (1903/835)); */
             /* padding-top: calc(35.25%); */
             padding-top: calc(45%);
-            background-image: url("https://thecoder505.github.io/imagesliderv2/image.jpg");
+            /* background-image: url("https://thecoder505.github.io/imagesliderv2/image.jpg"); */
+            background-image: url("https://thecoder505.github.io/slider_template_stratch_fix.com/scroll_image.jpg");
             background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -158,6 +159,12 @@
         }
         
         @media screen and (max-width: 900px) {
+            #holder {
+                max-width: 90vw;
+            }
+            .image {
+                padding-top: 39.65%;
+            }
             .bg-text {
                 top: 17%;
             }
@@ -166,6 +173,15 @@
         @media screen and (max-width: 750px) {
             .bg-text {
                 top: 13%;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            #holder {
+                max-width: 97vw;
+            }
+            .image {
+                padding-top: 42.73%;
             }
         }
     </style>
