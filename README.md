@@ -1,0 +1,1 @@
+# slider_template_stratch_fix.com
