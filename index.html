@@ -52,11 +52,11 @@
         
         .image {
             width: 100%;
-            /* padding-top: calc(100% / (1903/835)); */
+            padding-top: calc(100% / (4000/1758));
             /* padding-top: calc(35.25%); */
-            padding-top: calc(43%);
+            /* padding-top: calc(44%); */
             /* background-image: url("https://thecoder505.github.io/imagesliderv2/image.jpg"); */
-            background-image: url("scroll_image.jpg");
+            background-image: url("https://thecoder505.github.io/slider_template_stratch_fix.com/scroll_image.jpg");
             background-size: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -161,9 +161,6 @@
         @media screen and (max-width: 900px) {
             #holder {
                 max-width: 90vw;
-            }
-            .image {
-                padding-top: 39.65%;
             }
             .bg-text {
                 top: 17%;
@@ -307,7 +304,7 @@
             }
             if ((contentPosition1 <= limitToShow) && (divBottomLimit1 >= scrollDivTop)) {
                 image.style.backgroundSize = "224% 205%";
-                image.style.backgroundPosition = "95% 38%";
+                image.style.backgroundPosition = "94% 37%";
                 content0.classList.remove("animate");
                 content1.classList.add("animate");
                 content2.classList.remove("animate");
@@ -322,7 +319,7 @@
                 document.querySelector(".bg-text").classList.add("d-none");
             } else if ((contentPosition2 <= limitToShow) && (divBottomLimit2 >= scrollDivTop)) {
                 image.style.backgroundSize = "169% 174%";
-                image.style.backgroundPosition = "1.5% 26%";
+                image.style.backgroundPosition = "1.5% 24%";
                 content0.classList.remove("animate");
                 content1.classList.remove("animate");
                 content2.classList.add("animate");
@@ -351,8 +348,8 @@
                 document.querySelector(".child4").style.backgroundColor = "#fff";
                 document.querySelector(".bg-text").classList.remove("d-none");
             } else if ((contentPosition4 <= limitToShow) && (divBottomLimit4 >= scrollDivTop)) {
-                image.style.backgroundSize = "161% 164%";
-                image.style.backgroundPosition = "1.5% 32.5%";
+                image.style.backgroundSize = "163% 166%";
+                image.style.backgroundPosition = "1.5% 31.5%";
                 content0.classList.remove("animate");
                 content1.classList.add("animate");
                 content2.classList.remove("animate");
@@ -418,4 +415,4 @@
     </script>
 </body>
 
-</html>
+</html> 
