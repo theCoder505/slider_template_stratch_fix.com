@@ -76,6 +76,10 @@
             scroll-behavior: smooth;
         }
         
+        #mainScrollTxts {
+            scroll-snap-type: y mandatory;
+        }
+        
         #mainScrollTxts::-webkit-scrollbar {
             display: none;
         }
@@ -95,7 +99,7 @@
             padding: 20px;
             color: #312f2f;
             font-size: 18px;
-            transition: all 1s;
+            scroll-snap-align: center;
         }
         
         #divZero {
@@ -373,6 +377,7 @@
         var finalMaxHeight = (restHeight - (maxScreen2 * 2));
 
         document.getElementById("mainScrollTxts").style.maxHeight = finalMaxHeight + "px";
+        // document.getElementById("mainScrollTxts").style.scrollSnapType = "y mandatory"; //scroll-snap-type: y mandatory;
         document.getElementById("divFour").style.marginBottom = finalMaxHeight + "px";
         document.getElementById("divOne").style.marginTop = finalMaxHeight + "px";
         document.getElementById("divTwo").style.marginTop = finalMaxHeight + "px";
